@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+.cta { 
+    display: flex;
+    margin: o;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: -30px 0 0 0;
+
+}
+
+.border {
+    border-left: 1px solid #e1e1e1;
+}
+
+.box { 
+    text-align: center;
+    padding: 70px 20px;
+    font-weight: 300;
+}
+
+.box h1 { 
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sub { 
+    display: flex;
+    margin-top: 40px;
+    border: 1px solid #e1e1e1;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+input { 
+    background-color: white;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.input-box {
+    border-right: none;
+    padding: 0 30px;
+}
+
+.send-btn {
+    width: 90px;
+    cursor: pointer;
+    border-left: none;
+}
+
+.visit-store p { 
+    margin-bottom: 50px;
+}  
+.see-on-map {
+    color: black;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+.point { 
+    display: none;
+}
+
+
+.see-on-map:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+
+}
+
+
+@media (max-width: 414px) { 
+    .cta{ 
+        display: block;
+    }
+
+    .box { 
+        padding: 40px 10px;
+
+    }
+
+    .box h1 { 
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+footer { 
+    background-color: black;
+    margin: 0 20px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0 0;
+    padding-bottom: 60px;
+}
+
+.footer-container { 
+    padding: 30px 20px;
+}
+
+
+.footer-list-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list-header  h2 { 
+    font-weight: 200;
+    font-size: 30px;
+    display: none;
+}
+
+
+footer h3 {
+    font-weight: 500;
+    line-height: 48px;
+    font-size: 15px;
+  }
+
+.footer-list p { 
+    font-weight: 200;
+}
+
+.footer-owner { 
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.div { 
+    display: flex;
+}
+
+p { 
+    align-items: center;
+}
+
+p span { 
+    font-size: 13px;
+}
+
+
+@media (min-width: 768px) {
+    footer { 
+        display: block;
+    }
+
+    .footer-container { 
+
+        display: flex;
+        align-items: center;
+        padding: 0px 100px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    footer h4 { 
+        margin-left: 100px;
+    }
+
+    .footer-list { 
+        margin-top: 30px;
+    }
+
+    .footer-owner { 
+        padding: 0 30px;
+    }
+}
+
+
+@media (max-width: 414px){
+
+    footer { 
+        padding: 20px 0;
+    }
+
+    .footer-list-header h2 { 
+        display: block;
+    }
+
+    footer h3 {
+        line-height: 0px;
+      }
+
+    .footer-list-list { 
+        display: none;
+    }
+}

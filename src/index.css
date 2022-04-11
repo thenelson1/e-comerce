@@ -1,13 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@200;300;400;700&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  background: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+header {
+  background: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.header-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+
+}
+
+.bars { 
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.cart-count {
+  padding: 3px 8px;
+  background-color: #f69679;
+  color: white;
+  border-radius: 20px;
+  margin-left: -13px;
+  margin-top: -9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container h4 {
+  font-weight: 700;
+  line-height: 8px;
+  font-size: 19px;
+}
+
+.container h4 span {
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: 50px;
+}
+
+ul { 
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+
+}
+
+ul li {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 35px 0 0;
+  cursor: pointer;
+}
+
+.header-list li:hover {
+  color: rgb(45, 45, 188);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.user {
+  max-width: 400px;
+  min-width: 400px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 10px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 50px;
+  background: white;
+}
+
+.reg-title {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+  min-width: 330px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  text-align: center;
+  line-height: 10px;
+  margin-top: 50px;
+}
+
+label {
+  margin: 20px 0px 5px;
+}
+
+input {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+}
+
+
+.form-submit {
+  margin-top: 30px;
+  width: 40%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/hero.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  text-align: left;
+  display: flex;
+}
+
+.hero-container {
+  padding: 170px 180px;
+  color: white;
+}
+
+.hero-container h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.hero-container h4 {
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+
+}
+
+.hero-container h4 span {
+  font-weight: 500;
+}
+
+.hero-btn {
+  padding: 17px 42px;
+  background-color: white;
+  color: rgba(0, 40, 86, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background-color: #666666;
+  ;
+}
+
+
+.browse-styles {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.browse {
+  width: 100%;
+  margin-top: 1.5rem;
+  height: 100%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.style-text {
+  margin-top: -500px;
+  padding: 100px;
+  color: white;
+}
+
+.style-text h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.style-text h5 {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.style-text a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.products { 
+  display: flex;
+  margin-top: 40px;
+}
+
+.product img { 
+  width: 50%;
+}
+
+.product h5 { 
+  max-width: 400px;
+}
+
+.product { 
+  display: block;
+  text-align: center;
+  width: 60%;
+}
+
+.product img { 
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0px 10px;
+  }
+
+  .hero-container {
+    padding: 170px 20px;
+    color: white;
+  }
+
+  .hero-container h1 {
+    font-size: 40px;
+  }
+  
+  .hero-container h4 {
+    font-size: 15px;  
+  }
+  
+  .hero-btn {
+    padding: 12px 20px;
+    background-color: white;
+    color: rgba(0, 40, 86, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .browse-styles {
+    display: block;
+  }
+  
+  .bars { 
+    font-size: 20px;
+    display: inline;
+  }
+}
+
+
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0px 10px;
+  }
+
+  li { 
+    display: block;
+  }
+  .header-list {
+    display: none;
+  }
+
+  .ctn { 
+    display: none;
+  }
+
+  .menu a { 
+    display: block;
+    position: relative;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    text-transform: uppercase;
+   }
+
+  .hero { 
+    min-height: 90vh;
+  }
+
+  .user {
+    position: absolute;
+    min-width: 290px;
+    align-self: center;
+    margin: 10%;
+    margin-top: 50%;
+    width: 60%;
+    padding: 10px;  
+  }
+
+  .browse-styles {
+    display: block;
+  }
+  .reg-title {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+    min-width: 230px;
+  
+  }
+  .hero-container {
+    padding: 170px 20px;
+    color: white;
+  }
+
+  .hero-container h1 {
+    font-size: 30px;
+  }
+  
+  .hero-container h4 {
+    font-size: 15px;  
+  }
+  
+  .hero-btn {
+    padding: 12px 20px;
+    background-color: white;
+    color: rgba(0, 40, 86, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+
 }
